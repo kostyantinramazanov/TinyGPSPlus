@@ -55,7 +55,7 @@ struct TinyGPSLocation
    friend class TinyGPSPlus;
 public:
    enum Quality { Invalid = '0', GPS = '1', DGPS = '2', PPS = '3', RTK = '4', FloatRTK = '5', Estimated = '6', Manual = '7', Simulated = '8' };
-   enum Mode { N = 'N', A = 'A', D = 'D', E = 'E'};
+   enum Mode { N = 'N', A = 'A', D = 'D', E = 'E', F = 'F', M = 'M', R = 'R'};
 
    bool isValid() const    { return valid; }
    bool isUpdated() const  { return updated; }
